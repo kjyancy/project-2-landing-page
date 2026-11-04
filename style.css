@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Beginning formatting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+#CTA {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  background-color: #f7f1e1;
+}
+
+/* Navigation bar */
+
+#title {
+  color: #5e483b;
+  font-family:"Libre Bodoni", serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 10px;
+}
+
+/* Title Decorative lines */
+
+#title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+#title::before,
+#title::after {
+  content: "";
+  flex: 1;
+  height: 3px;
+  background-color: #92705f;
+}
+.navbar {
+  background-color: #434534;
+  padding: 0.5rem;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #f7f1e1;
+  font-family:"Libre Bodoni", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left:1.25rem;
+}
+.navbar a {
+  padding: 1rem 1rem;
+  color: white;
+  display: block;
+}  
+.nav-menu {
+  display:flex;
+  gap: 2rem;
+}
+.nav-link {
+  color: #f7f1e1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  background-color: #9a9879;
+}
+.nav-link:focus-visible {
+  outline: 2px solid #f7f1e1;
+  outline-offset: -1.5px;
+}
+.nav-link:active {
+  transform: scale(0.98);
+  }
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .nav-link {
+    width: 100%;
+    padding: 1rem;
+  }
+  #main-title {
+    font-size:7rem;
+  }
+}
+
+/* Hero Section */
+
+.hero {
+  color: #92705f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align:center;
+}
+#main-title {
+  color: #5e483b;
+  font-family:"Libre Bodoni", serif;
+  font-weight:bold;
+  font-size: 4.75rem;
+  line-height: 0.9;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align:center;
+}
+#CTA {
+  display:flex;
+  justify-content:center;
+  color: #f7f1e1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75rem;
+  background-color: #434533;
+  border-radius: 6px;
+  width: 19rem;
+  height: 5rem;
+  transition: all 0.3s ease;
+}
+#CTA {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+#CTA:hover {
+  background-color: #9a9879;
+}
+#CTA:focus-visible {
+  outline: 2px solid #434533;
+  outline-offset: 3px;
+}
+#CTA:active {
+  transform: scale(0.95);
+}
+.cta-button {
+  display:flex;
+  justify-content:center;
+}
+#chicken-pasta-image {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:85%;
+  height:auto;
+  border: 5px solid #5e483b;
+  margin-top:2rem;
+}
+
+/* Supporting Section 1: Information */
+
+#farfalle-pasta-image {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:85%;
+  height:auto;
+  border: 5px solid #5e483b;
+  margin-top: 2rem;
+}
+#parmesan-image {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:85%;
+  height:auto;
+  border: 5px solid #5e483b;
+  margin-top:2rem;
+}
+#pasta-plate-image {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:85%;
+  height:auto;
+  border: 5px solid #5e483b;
+  margin-top:2rem;
+  }
+.stats {
+  color: #5e483b;
+  font-family:"Libre Bodoni", serif;
+  font-size:2.25rem;
+  font-weight: bold;
+
+  flex-direction:row;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  gap:20px;
+  display:flex;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+.body-text {
+  color:#434534;
+  font-size:1.25rem;
+  font-family: "Montserrat", sans-serif;
+  text-align:center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Supporting Section 2: Ingredients */
+
+h2 {
+  color: #5e483b;
+  font-family:"Libre Bodoni", serif;
+  font-size: 3.5rem;
+  margin: 3rem;
+}
+
+/* Header Underlines*/
+
+h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 4px;
+  background-color: #92705f;
+  border-radius: 2px;
+}
+#ing-list {
+  color: #434534;
+  font-family: "Montserrat", sans-serif;
+  display:flex;
+  gap:3rem;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+#ingredients h3{
+  font-size: 2rem;
+  font-family:"Libre Bodoni", serif;
+  margin-bottom:0.75rem;
+}
+#ingredients ul{
+  list-style-type: circle;
+}
+#ingredients li{
+  padding: 0.25rem;
+  font-size: 1.25rem;
+}
+
+/* Supporting Section 3: Instructions */
+
+.steps {
+  font-size: 1.25rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom:5rem;
+}
+.steps li{
+  color:#434534;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem;
+}
+
+/* Footer */
+
+#footer {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  align-content:center;
+  padding:1.5rem;
+  margin-top:2rem;
+  list-style:none;
+  background-color:#434534;
+  color: #f7f1e1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+}
+#footer p{
+  padding:1rem;
+  border-radius: 6px;
+  margin-top:2rem;
+  margin-bottom:0.75rem;
+}
+#footer nav {
+  margin-top: 2rem;
+}
+#top-button {
+  color: #f7f1e1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  border:2px solid #f7f1e1;
+  border-radius: 6px;
+  padding: 1.25rem;
+  transition: all 0.3s ease;
+}
+#top-button:hover {
+  background-color: #9a9879;
+}
+#top-button:focus-visible {
+  outline: 2px solid #f7f1e1;
+  outline-offset: 2px;
+}
+#top-button:active {
+  color: #f7f1e1;
+  transform: scale(0.95);
+}
